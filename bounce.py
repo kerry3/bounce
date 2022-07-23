@@ -24,3 +24,7 @@ driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div/div/div/div[2]/d
 url='https://opga100.com/bbs/board.php?bo_table=op_partner_posting&wr_id=537552&uptime=1658536907&cat=18&cat2=&addrName=&sub_bs=&_stx=%EC%84%A0%EB%A6%89-%EB%B0%94%EC%9A%B4%EC%8A%A4'
 driver.get(url)
 
+html = driver.page_source
+soup = BeautifulSoup(html, 'html.parser')
+print(soup)
+
