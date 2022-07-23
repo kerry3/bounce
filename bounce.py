@@ -1,5 +1,12 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import telegram
+
+
+token = '5478587674:AAFEqet3djg6ajTh0VAXnwfnG85nCcFsQWM'
+bot = telegram.Bot(token)
+id = 1295404222
+bot = telegram.Bot(token)
 
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
@@ -27,5 +34,5 @@ driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
 example=soup.find('h1', {'class': False, 'id': False})
-print(example.get_text())
+bot.sendMessage(chat_id=id, text=example.get_text())
 
