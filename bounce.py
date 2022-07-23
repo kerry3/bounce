@@ -26,5 +26,6 @@ driver.get(url)
 
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
-print(soup)
+example=soup.find_all('h1', {'class': False, 'id': False})
+print(example)
 
