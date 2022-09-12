@@ -13,10 +13,9 @@ options.add_argument('headless')
 options.add_argument('window-size=1920x1080')
 options.add_argument("disable-gpu")
 # 혹은 options.add_argument("--disable-gpu")
-
-"""
 driver = webdriver.Chrome('chromedriver', chrome_options=options)
 
+"""
 url='https://opga009.com/bbs/login.php' #들어가려는 사이트 주소
 driver.get(url)  #사이트 접속
 
