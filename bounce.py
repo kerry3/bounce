@@ -33,9 +33,7 @@ url='https://opga101.com/bbs/board.php?bo_table=op_partner_posting&wr_id=537552&
 driver.get(url)
 
 html = driver.page_source
-print(html)
 soup = BeautifulSoup(html, 'html.parser')
 example=soup.find('h1', {'class': False, 'id': False})
-print(example.get_text())
 bot.sendMessage('@바운스', text=example.get_text())
 
