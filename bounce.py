@@ -37,5 +37,5 @@ print(html)
 soup = BeautifulSoup(html, 'html.parser')
 example=soup.find('h1', {'class': False, 'id': False})
 print(example.get_text())
-bot.sendMessage(chat_id=id, text=example.get_text())
+bot.sendMessage('@바운스', text=example.get_text())
 
