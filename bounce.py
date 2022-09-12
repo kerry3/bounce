@@ -12,7 +12,7 @@ options = webdriver.ChromeOptions()
 options.add_argument('headless')
 options.add_argument('window-size=1920x1080')
 options.add_argument("disable-gpu")
-options.add_argument("--enable-javascript")
+# options.add_argument("--enable-javascript") # please turn javascript on and reload the page 때문에 넣어봤는데 안됨 
 # 혹은 options.add_argument("--disable-gpu")
 driver = webdriver.Chrome('chromedriver', chrome_options=options)
 
