@@ -29,7 +29,7 @@ driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div/div/div/div[2]/d
 """
 # 로그인 부분(바운스는 로그인 안해도 출근부 조회 가능해서 그냥 다 주석 처리)
 
-url='https://opga009.com/bbs/board.php?bo_table=op_partner_posting&wr_id=537552&uptime=1662946218&cat=1&cat2=6&addrName=%EC%84%A0%EB%A6%89&biz=1&bizName=%EC%98%A4%ED%94%BC&_stx=%EC%84%A0%EB%A6%89-%EB%B0%94%EC%9A%B4%EC%8A%A4&fin=Y'
+url='https://opga101.com/bbs/board.php?bo_table=op_partner_posting&wr_id=537552&uptime=1662922019&cat=18&cat2=&addrName=&sub_bs=&_stx=%EC%84%A0%EB%A6%89-%EB%B0%94%EC%9A%B4%EC%8A%A4'
 driver.get(url)
 
 html = driver.page_source
